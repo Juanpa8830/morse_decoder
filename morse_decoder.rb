@@ -6,11 +6,11 @@ CODE_MORSE = {
 }.freeze
 
 def decode_char(char)
-    CODE_MORSE[char]
+  CODE_MORSE[char]
 end
 
 def decode_word(word)
-    separate = word.split
+  separate = word.split
 
   final_word = separate.map { |char| CODE_MORSE[char] }
 
